@@ -18,13 +18,16 @@ bytes can look something like this:
 as to what plaintext value a particular byte may represent.
 In this case it's safe to assume that the plaintext is in
 English.
+
 2. Find the ASCII decimal value of your guess. Typing "ascii"
 at a terminal will give you the entire table; "ascii 'X'"
 will give you just the values for 'X'.
+
 3. XOR the value of your guess against the encrypted byte;
 the result, if correct, is the keystream byte for that index/
 column.  Test it against other values at that index/column.
 You'll know you've hit gold when you're getting characters
 that make sense for an English plaintext.
+
 4. Based on what you find, repeat this process for other
 positions in the ciphertexts.
