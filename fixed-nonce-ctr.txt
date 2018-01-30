@@ -20,8 +20,8 @@ In this case it's safe to assume that the plaintext is in
 English.
 
 2. Find the ASCII decimal value of your guess. Typing "ascii"
-at a terminal will give you the entire table; "ascii 'X'"
-will give you just the values for 'X'.
+at a terminal will give you the entire table; "ascii c"
+will give you just the values for some character 'c'.
 
 3. XOR the value of your guess against the encrypted byte;
 the result, if correct, is the keystream byte for that index/
