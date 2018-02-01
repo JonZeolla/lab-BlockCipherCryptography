@@ -36,4 +36,4 @@ If `169` is the correct keystream byte for each same index of any ciphertext, th
 
 Clearly my guess of `S` is off-base, so I should start over with another guess.
 
-Should you find that you have a keystream byte that returns "legitimate" characters for that index, but which don't seem to make sense in the context of what you've already decrypted, your guess (the `S` in the above example) is likely just a character or two away from the correct one.
+Should you find that you have a keystream byte that returns "legitimate" characters for that index, but they don't seem to make sense in the context of what you've already decrypted, your guess (the `S` in the above example) is likely just a character or two away from the correct one.
