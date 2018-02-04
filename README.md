@@ -1,4 +1,4 @@
-# Block Cipher Cryptograph Lab
+# Block Cipher Cryptography Lab
 An introductory lab to cryptographic block cipher modes.
 
 ## How to clone this branch
