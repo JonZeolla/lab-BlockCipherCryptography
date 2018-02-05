@@ -46,5 +46,5 @@ There's no "solution" persay for this lab; it's an opportunity to play with cryp
    
 7. Open the original `filename.jpg` along with the new `filename.ecb.ppm` and compare/enjoy.  Any reasonably capable image viewer (MacOS's Preview, for instance) should be able to open `.ppm` files.
 
-8. Go back to step 3 with another image, or try encrypting the same image body again with a different password.
+8. Go back to step 3 with another image in this directory (or go dig some up yourself).  You can also try encrypting the same image body again with a different password for different results.
 
