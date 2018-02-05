@@ -27,14 +27,14 @@ There's no "solution" persay for this lab; it's an opportunity to play with cryp
 
 <details>
   <summary>Why <code>.ppm</code>?</summary>
-  This is a convenient format because there's no compression and the image header is simple... Why does this matter?  Basically the header provides information about the image, and so when we go to encrypt the image, we only want to encrypt the image body, where the pixel bytes are located.  Encrypting the image header would give us a file that image viewers wouldn't know how to handle, killing all the fun.  Furthermore, `.ppm`'s simple header means that we have a reliable boundary for where the header stops and the image body begins, regardless of image contents.
+  This is a convenient format because there's no compression and the image header is simple... Why does this matter?  Basically the header provides information about the image, and so when we go to encrypt the image, we only want to encrypt the image body, where the pixel bytes are located.  Encrypting the image header would give us a file that image viewers wouldn't know how to handle, killing all the fun.  ~~Furthermore, `.ppm`'s simple header means that we have a reliable boundary for where the header stops and the image body begins, regardless of image contents.~~ It turns out that where an image header ends also depends on what you use to convert to <code>.ppm</code> (GIMP puts the header one byte further into the file).
   </details>
 
 4. Separate the image header and the image body:
 
-   `head -n 4 filename.ppm > filename.header`
+   `head -n 3 filename.ppm > filename.header`
 
-   `tail -n +5 filename.ppm > filename.body`
+   `tail -n +4 filename.ppm > filename.body`
 
 5. Encrypt the image body:
 
@@ -48,3 +48,5 @@ There's no "solution" persay for this lab; it's an opportunity to play with cryp
 
 8. Go back to step 3 with another image in this directory (or go dig some up yourself).  You can also try encrypting the same image body again with a different password for different results.
 
+
+_Some notes about the included images and having luck with finding your own: They've been modified to better suit the purposes of this lab.  You'll get more interesting classic-ECB-image results with images that have been <em>posterized</em>, or have had their color detail reduced.  This is part of why Tux the Penguin works so well, simple colors.  The Mark Rothko painting was reduced to 15 colors (sorry, Mark), but the Schlitz ad was reduced to 3, and the results reflect that.  Unfortunately it's not always apparent to the naked eye just how much color detail is lurking in what seem to be swaths of a single color (the yellow surrounding Steve Martin was surprisingly problematic), so that's where an image editor comes in handy if you want to keep playing with this._
