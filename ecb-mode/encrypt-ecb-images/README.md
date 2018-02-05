@@ -25,7 +25,10 @@ There's no "solution" persay for this lab; it's an opportunity to play with cryp
    * Fedora: `sudo dnf install openssl`
 3. Convert an image to `.ppm` format: `magick filename.jpg filename.ppm`
 
-(_This is a convenient format because there's no compression and the image header is simple... Why does this matter?  Basically the header provides information about the image, and so when we go to encrypt the image, we only want to encrypt the image body, where the pixel bytes are located.  Encrypting the image header would give us a file that image viewers wouldn't know how to handle, killing all the fun.  Furthermore, `.ppm`'s simple header means that we have a reliable boundary for where the header stops and the image body begins, regardless of image contents._)
+<details>
+  <summary>Why <code>.ppm</code>?</summary>
+  This is a convenient format because there's no compression and the image header is simple... Why does this matter?  Basically the header provides information about the image, and so when we go to encrypt the image, we only want to encrypt the image body, where the pixel bytes are located.  Encrypting the image header would give us a file that image viewers wouldn't know how to handle, killing all the fun.  Furthermore, `.ppm`'s simple header means that we have a reliable boundary for where the header stops and the image body begins, regardless of image contents.
+  </details>
 
 4. Separate the image header and the image body:
 
