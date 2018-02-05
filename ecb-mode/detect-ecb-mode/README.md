@@ -8,7 +8,7 @@ Electronic Codebook (ECB) mode encrypts identical blocks in an identical manner.
 
 ### This Lab
 
-Find out which `Image*.ppm` in this directory has been encrypted with AES in ECB mode.  GIMP can be used to open these, but an image editor shouldn't be required to solve this.  [Hints](#hints) and [solutions](#solution) are available below.
+Find out which `Image*.ppm` in this directory has been encrypted with AES in ECB mode.  It _might_ be possible to use an image editor to solve this, but it certainly won't be the easiest way.  [Hints](#hints) and [solutions](#solution) are available below.
 
 ## Hints
 <details>
@@ -30,11 +30,11 @@ Find out which `Image*.ppm` in this directory has been encrypted with AES in ECB
 
 ## Solution
 <details>
-  <summary>Click here to find the solution</summary>
+  <summary>Click here to see the solution</summary>
   <br>
 
 
-  `Image4.ppm` is the one encrypted with ECB mode.  It's the only one containing duplicate blocks.  They're all derived from the same image, just encrypted under different modes and then cropped differently.
+  `Image4.ppm` is the one encrypted with ECB mode.  It's the only one containing duplicate blocks.  Each file is derived from the same image, just encrypted under different modes and then cropped differently.
 
 
   One solution in Bash would be:
