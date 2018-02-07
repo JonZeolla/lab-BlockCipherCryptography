@@ -27,3 +27,7 @@ Event Details coming soon
 ### 2018-01-10 Steel City Information Security Presentation:  Block Cipher Modes of Operation
 [Event Posting](https://www.meetup.com/Steel-City-InfoSec/events/245327758/)  
 [Event Details](https://www.meetup.com/Steel-City-InfoSec/messages/boards/thread/51382385)  
+
+## Other Materials
+- [awesome-cryptography](https://github.com/sobolevn/awesome-cryptography)
+- [CryptoPals](https://cryptopals.com/)
