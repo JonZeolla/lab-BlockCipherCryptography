@@ -12,7 +12,7 @@ Electronic Codebook (ECB) mode encrypts identical blocks in an identical manner.
 The effects of ECB mode encryption on images are interesting.  Areas of an image that are consistently colored/shaded will be encrypted to different values but in a consistent way.
 
 
-There's no "solution" persay for this lab; it's an opportunity to play with cryptography in a manner less encountered.  Follow the instructions below and apply them to any of the images in this directory.
+There's no "solution" per se for this lab; it's an opportunity to play with cryptography in a manner less encountered.  Follow the instructions below and apply them to any of the images in this directory.
 
 1. Install ImageMagick if you don't already have it.
    * MacOS via Homebrew: `brew install imagemagick`
