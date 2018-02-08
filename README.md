@@ -29,5 +29,7 @@ Event Details coming soon
 [Event Details](https://www.meetup.com/Steel-City-InfoSec/messages/boards/thread/51382385)  
 
 ## Other Materials
+- [ECB Wikipedia Page](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB))
+- [CTR Wikipedia Page](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_(CTR))
 - [awesome-cryptography](https://github.com/sobolevn/awesome-cryptography)
 - [CryptoPals](https://cryptopals.com/)
